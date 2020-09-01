@@ -1,4 +1,4 @@
-# CSC588 Audio Engine
+# Audio Engine
 Building an Audio Engine using Microsoft XAudio2 library by appliying Muti-Threadibg concepts, command pattern in circular queues to pass commands between threads.
 
 # Demos
