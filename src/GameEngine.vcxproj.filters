@@ -1,0 +1,776 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="_Framework">
+      <UniqueIdentifier>{f04c9286-e219-4fb7-b306-f9717e9aba86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="_Libs">
+      <UniqueIdentifier>{bd8ae18d-6c27-4fef-af01-0494439e0ab5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\AzulCore">
+      <UniqueIdentifier>{e27cc8b3-faef-4b32-8f4f-4e06668fef2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\AzulCore\include">
+      <UniqueIdentifier>{0a916840-bf75-45c5-8cb6-01add7d2e3ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\AzulCore\lib">
+      <UniqueIdentifier>{6cccde2a-1b53-42dc-b7d9-542c218d7a9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\GLFW">
+      <UniqueIdentifier>{bd2c6bbd-4e41-413b-b156-67eba71a41d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\GLFW\include">
+      <UniqueIdentifier>{4e1feab9-4690-49f0-bd17-4339401fd6a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\GLFW\lib">
+      <UniqueIdentifier>{014836a7-e050-4381-920a-8e6209e65fb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\Math">
+      <UniqueIdentifier>{82713a5f-c015-4cb6-bb90-ce22f40c9923}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\Math\include">
+      <UniqueIdentifier>{faddb569-1772-4147-9c21-90167fbf3d25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\Math\lib">
+      <UniqueIdentifier>{477a8c09-a742-40a7-a7d8-99b9c35b04d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\SB6">
+      <UniqueIdentifier>{cb9decae-e7aa-4b85-9f3a-a82381d80370}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\SB6\include">
+      <UniqueIdentifier>{f3f652af-8d73-46a7-bec2-c7be40f7a3cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\SB6\lib">
+      <UniqueIdentifier>{70175d1f-459b-4a32-80cb-df426c7b3116}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_ThreadHelper">
+      <UniqueIdentifier>{7cb08e64-3478-4207-b5f9-66ee9aa75cbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\File_Slow">
+      <UniqueIdentifier>{24376aaa-48e7-41ee-a3d0-6cc64badd6c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\File_Slow\include">
+      <UniqueIdentifier>{bf730f9b-1d7f-4b1c-b37f-2778ee936bb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\File_Slow\lib">
+      <UniqueIdentifier>{735fa2aa-e67c-4e1a-b662-93df5965f5e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\Time">
+      <UniqueIdentifier>{a711c029-8f97-4ac9-b434-658c76b97175}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\Time\include">
+      <UniqueIdentifier>{57ef72c5-52c6-4ca4-a162-2e83be965ea1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\Time\lib">
+      <UniqueIdentifier>{2ee88d0e-95ee-463e-9da6-10d5554677f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Thread_Game">
+      <UniqueIdentifier>{22f6ac8b-cef7-4008-992e-2c81d83906d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\System_Input">
+      <UniqueIdentifier>{d56c7fe7-0fcb-4912-b94a-4ceebc8cfaa0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\System_Circular">
+      <UniqueIdentifier>{f2575ed4-82c7-41c0-8cab-a92922259aa5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\System_XAudio2">
+      <UniqueIdentifier>{669f031b-7de4-4d05-9790-84a1df544bb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\System_Handles">
+      <UniqueIdentifier>{e07c894b-df85-49fd-8714-fb84e968e4ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\System_Manager">
+      <UniqueIdentifier>{abe7353e-591c-4767-af17-148c11190966}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\System_Timer">
+      <UniqueIdentifier>{5438ea4f-3591-4da0-a656-517113be955e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Commands">
+      <UniqueIdentifier>{1ea56289-d550-498c-87f1-2190bdf7702c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Snd">
+      <UniqueIdentifier>{571c4761-4ac7-4680-9369-9ffb612bc9d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Thread_Audio">
+      <UniqueIdentifier>{04878054-23f0-4705-96ad-ffcb3f694412}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Thread_Audio\ASnd">
+      <UniqueIdentifier>{6a0ff5ec-25d3-41ed-9c7e-81ec6d689881}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Thread_Audio\Playlist">
+      <UniqueIdentifier>{da37c5da-57e2-4477-b853-a6de1671ec21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Thread_Audio\Voice">
+      <UniqueIdentifier>{83759faf-fc12-4ddc-b9ee-37a90c27b836}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Thread_Audio\Wave">
+      <UniqueIdentifier>{640f0365-7414-4099-8e18-cad71f67cd49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Demos">
+      <UniqueIdentifier>{01eabd8f-97e1-4d48-bbaf-ed75ad1d9fc0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Demos\Demo1">
+      <UniqueIdentifier>{3c8bd46c-b422-4a2a-935c-356e253ee993}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Demos\Demo2">
+      <UniqueIdentifier>{a0eb6cfb-004b-435c-bd3b-c7af8dbb1d5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Demos\Demo3">
+      <UniqueIdentifier>{b42768cb-eed3-458d-8bdc-7855ad90856f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Demos\Demo4">
+      <UniqueIdentifier>{73a42cb1-6111-41a7-8c06-3e245cc80886}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\System_File">
+      <UniqueIdentifier>{234c960d-f3b3-4b2b-a9d8-dc5385bf9640}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Demos\Demo5">
+      <UniqueIdentifier>{8ba9f92c-2a0c-4c51-9cec-41480e523a28}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Framework\__DO NOT MODIFY__">
+      <Filter>_Framework</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Framework\Framework.h">
+      <Filter>_Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\Align16.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\Constants.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\Enum.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\MathApp.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\MathEngine.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\Matrix.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\Quat.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\QuatApp.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\Util.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\Vect.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\VectApp.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\arcball.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\object.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\sb6.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\sb6ext.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\sb6ktx.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\sb6mfile.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\shader.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\vmath.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\GLFW\include\GL\glfw.h">
+      <Filter>_Libs\GLFW\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\AzulCore.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\AzulFileHdr.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\AzulHelper.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\Camera.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\DebugOut.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\Engine.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GpuVertTypes.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_ColorByPosition.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_ColorNoTexture.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_ColorNoTextureLight.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_Sprite.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_SpriteBox.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_TextureFlat.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_TextureLight.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_WireframeAutoColor.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_WireframeConstantColor.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\Image.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\Keyboard.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\LibrarySetup.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\Model.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\Mouse.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\Rect.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\ShaderObject.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\Texture.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\TextureTGA.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThreadHelper\ThreadDictionary.h">
+      <Filter>_ThreadHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThreadHelper\ThreadHelper.h">
+      <Filter>_ThreadHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThreadHelper\WindowsWrapper.h">
+      <Filter>_ThreadHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\File_Slow\include\File_Slow.h">
+      <Filter>_Libs\File_Slow\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Time\include\Time.h">
+      <Filter>_Libs\Time\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Time\include\Timer.h">
+      <Filter>_Libs\Time\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\File.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="System_Input\InputTest.h">
+      <Filter>Application\System_Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread_Game\Game.h">
+      <Filter>Application\Thread_Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread_Game\GameApp.h">
+      <Filter>Application\Thread_Game</Filter>
+    </ClInclude>
+    <ClInclude Include="System_XAudio2\XAudio2Chunk.h">
+      <Filter>Application\System_XAudio2</Filter>
+    </ClInclude>
+    <ClInclude Include="System_XAudio2\XAudio2Endianess.h">
+      <Filter>Application\System_XAudio2</Filter>
+    </ClInclude>
+    <ClInclude Include="System_XAudio2\XAudio2LoadLibs.h">
+      <Filter>Application\System_XAudio2</Filter>
+    </ClInclude>
+    <ClInclude Include="System_XAudio2\XAudio2Wrapper.h">
+      <Filter>Application\System_XAudio2</Filter>
+    </ClInclude>
+    <ClInclude Include="System_Circular\CircularData.h">
+      <Filter>Application\System_Circular</Filter>
+    </ClInclude>
+    <ClInclude Include="System_Circular\CircularIndex.h">
+      <Filter>Application\System_Circular</Filter>
+    </ClInclude>
+    <ClInclude Include="System_Handles\Handle.h">
+      <Filter>Application\System_Handles</Filter>
+    </ClInclude>
+    <ClInclude Include="System_Handles\HandleMan.h">
+      <Filter>Application\System_Handles</Filter>
+    </ClInclude>
+    <ClInclude Include="System_Manager\DLink.h">
+      <Filter>Application\System_Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="System_Manager\Manager.h">
+      <Filter>Application\System_Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="System_Timer\TimeEvent.h">
+      <Filter>Application\System_Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="System_Timer\TimeEventMan.h">
+      <Filter>Application\System_Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="Commands\ACommand.h">
+      <Filter>Application\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Commands\ACreateSnd.h">
+      <Filter>Application\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Commands\APanSnd.h">
+      <Filter>Application\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Commands\APlaySnd.h">
+      <Filter>Application\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Commands\AQuit.h">
+      <Filter>Application\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Commands\AVolSnd.h">
+      <Filter>Application\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Commands\Command.h">
+      <Filter>Application\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Snd\Snd.h">
+      <Filter>Application\Snd</Filter>
+    </ClInclude>
+    <ClInclude Include="Snd\SndMan.h">
+      <Filter>Application\Snd</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread_Audio\ASnd.h">
+      <Filter>Application\Thread_Audio\ASnd</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread_Audio\ASndMan.h">
+      <Filter>Application\Thread_Audio\ASnd</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread_Audio\Playlist.h">
+      <Filter>Application\Thread_Audio\Playlist</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread_Audio\PlaylistMan.h">
+      <Filter>Application\Thread_Audio\Playlist</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread_Audio\Voice.h">
+      <Filter>Application\Thread_Audio\Voice</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread_Audio\VoiceCallback.h">
+      <Filter>Application\Thread_Audio\Voice</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread_Audio\VoiceMan.h">
+      <Filter>Application\Thread_Audio\Voice</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread_Audio\Wave.h">
+      <Filter>Application\Thread_Audio\Wave</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread_Audio\WaveMan.h">
+      <Filter>Application\Thread_Audio\Wave</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread_Audio\AudioEngine.h">
+      <Filter>Application\Thread_Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread_Audio\AudioMain.h">
+      <Filter>Application\Thread_Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Snd\SndID.h">
+      <Filter>Application\Snd</Filter>
+    </ClInclude>
+    <ClInclude Include="System_Input\InputProcess.h">
+      <Filter>Application\System_Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Commands\AStopSnd.h">
+      <Filter>Application\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Demos\Demo1\Demo1A_0.h">
+      <Filter>Application\Demos\Demo1</Filter>
+    </ClInclude>
+    <ClInclude Include="Demos\Demo1\Demo1A_1.h">
+      <Filter>Application\Demos\Demo1</Filter>
+    </ClInclude>
+    <ClInclude Include="Demos\Demo1\Demo1A_2.h">
+      <Filter>Application\Demos\Demo1</Filter>
+    </ClInclude>
+    <ClInclude Include="Demos\Demo1\Demo1B_0.h">
+      <Filter>Application\Demos\Demo1</Filter>
+    </ClInclude>
+    <ClInclude Include="Demos\Demo1\Demo1B_1.h">
+      <Filter>Application\Demos\Demo1</Filter>
+    </ClInclude>
+    <ClInclude Include="Demos\Demo1\Demo1C_0.h">
+      <Filter>Application\Demos\Demo1</Filter>
+    </ClInclude>
+    <ClInclude Include="Demos\Demo1\Demo1C_1.h">
+      <Filter>Application\Demos\Demo1</Filter>
+    </ClInclude>
+    <ClInclude Include="Demos\Demo1\Demo1D_0.h">
+      <Filter>Application\Demos\Demo1</Filter>
+    </ClInclude>
+    <ClInclude Include="Demos\Demo1\Demo1D_1.h">
+      <Filter>Application\Demos\Demo1</Filter>
+    </ClInclude>
+    <ClInclude Include="Demos\Demo1\Demo1E_0.h">
+      <Filter>Application\Demos\Demo1</Filter>
+    </ClInclude>
+    <ClInclude Include="Demos\Demo1\Demo1.h">
+      <Filter>Application\Demos\Demo1</Filter>
+    </ClInclude>
+    <ClInclude Include="Demos\Demo2\Demo2.h">
+      <Filter>Application\Demos\Demo2</Filter>
+    </ClInclude>
+    <ClInclude Include="Commands\ASndEnd.h">
+      <Filter>Application\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Commands\ACommandQueue.h">
+      <Filter>Application\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Demos\Demo2\Demo2A_0.h">
+      <Filter>Application\Demos\Demo2</Filter>
+    </ClInclude>
+    <ClInclude Include="Commands\AStartStitch.h">
+      <Filter>Application\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Snd\SndPriorityEntry.h">
+      <Filter>Application\Snd</Filter>
+    </ClInclude>
+    <ClInclude Include="Demos\Demo3\Demo3.h">
+      <Filter>Application\Demos\Demo3</Filter>
+    </ClInclude>
+    <ClInclude Include="Demos\Demo3\Demo3_0.h">
+      <Filter>Application\Demos\Demo3</Filter>
+    </ClInclude>
+    <ClInclude Include="Demos\Demo3\Demo3_1.h">
+      <Filter>Application\Demos\Demo3</Filter>
+    </ClInclude>
+    <ClInclude Include="Demos\Demo3\Demo3_2.h">
+      <Filter>Application\Demos\Demo3</Filter>
+    </ClInclude>
+    <ClInclude Include="Demos\Demo3\Demo3_3.h">
+      <Filter>Application\Demos\Demo3</Filter>
+    </ClInclude>
+    <ClInclude Include="Demos\Demo3\Demo3_4.h">
+      <Filter>Application\Demos\Demo3</Filter>
+    </ClInclude>
+    <ClInclude Include="Demos\Demo3\Demo3_5.h">
+      <Filter>Application\Demos\Demo3</Filter>
+    </ClInclude>
+    <ClInclude Include="Demos\Demo3\Demo3_6.h">
+      <Filter>Application\Demos\Demo3</Filter>
+    </ClInclude>
+    <ClInclude Include="Demos\Demo3\Demo3_7.h">
+      <Filter>Application\Demos\Demo3</Filter>
+    </ClInclude>
+    <ClInclude Include="Demos\Demo3\Demo3_8.h">
+      <Filter>Application\Demos\Demo3</Filter>
+    </ClInclude>
+    <ClInclude Include="Demos\Demo3\Demo3_9.h">
+      <Filter>Application\Demos\Demo3</Filter>
+    </ClInclude>
+    <ClInclude Include="Demos\Demo4\Demo4.h">
+      <Filter>Application\Demos\Demo4</Filter>
+    </ClInclude>
+    <ClInclude Include="Demos\Demo4\Demo4_0.h">
+      <Filter>Application\Demos\Demo4</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread_Game\UserCallBack.h">
+      <Filter>Application\Thread_Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread_Game\GCommand.h">
+      <Filter>Application\Thread_Game</Filter>
+    </ClInclude>
+    <ClInclude Include="System_File\FAsyncFileLoad.h">
+      <Filter>Application\System_File</Filter>
+    </ClInclude>
+    <ClInclude Include="System_File\FCommand.h">
+      <Filter>Application\System_File</Filter>
+    </ClInclude>
+    <ClInclude Include="System_File\FileMain.h">
+      <Filter>Application\System_File</Filter>
+    </ClInclude>
+    <ClInclude Include="System_File\FileMan.h">
+      <Filter>Application\System_File</Filter>
+    </ClInclude>
+    <ClInclude Include="System_File\FileUserCallback.h">
+      <Filter>Application\System_File</Filter>
+    </ClInclude>
+    <ClInclude Include="Commands\AAsyncFileCompleted.h">
+      <Filter>Application\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Commands\AFileLoad.h">
+      <Filter>Application\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Demos\Demo5\Demo5_0.h">
+      <Filter>Application\Demos\Demo5</Filter>
+    </ClInclude>
+    <ClInclude Include="Demos\Demo5\Demo5.h">
+      <Filter>Application\Demos\Demo5</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread_Game\GFileUserCallback.h">
+      <Filter>Application\Thread_Game</Filter>
+    </ClInclude>
+    <ClInclude Include="System_File\FQuit.h">
+      <Filter>Application\System_File</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread_Game\GUserCallback.h">
+      <Filter>Application\Thread_Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Demos\Demo5\Demo5_1.h">
+      <Filter>Application\Demos\Demo5</Filter>
+    </ClInclude>
+    <ClInclude Include="Demos\Demo5\Demo5_2.h">
+      <Filter>Application\Demos\Demo5</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\ThreadHelper\ThreadDictionary.cpp">
+      <Filter>_ThreadHelper</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThreadHelper\ThreadHelper.cpp">
+      <Filter>_ThreadHelper</Filter>
+    </ClCompile>
+    <ClCompile Include="System_Input\InputTest.cpp">
+      <Filter>Application\System_Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Thread_Game\Game.cpp">
+      <Filter>Application\Thread_Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Thread_Game\GameApp.cpp">
+      <Filter>Application\Thread_Game</Filter>
+    </ClCompile>
+    <ClCompile Include="System_XAudio2\XAudio2Chunk.cpp">
+      <Filter>Application\System_XAudio2</Filter>
+    </ClCompile>
+    <ClCompile Include="System_Circular\CircularIndex.cpp">
+      <Filter>Application\System_Circular</Filter>
+    </ClCompile>
+    <ClCompile Include="System_Circular\CircularData.cpp">
+      <Filter>Application\System_Circular</Filter>
+    </ClCompile>
+    <ClCompile Include="System_Handles\HandleMan.cpp">
+      <Filter>Application\System_Handles</Filter>
+    </ClCompile>
+    <ClCompile Include="System_Handles\HandleLock.cpp">
+      <Filter>Application\System_Handles</Filter>
+    </ClCompile>
+    <ClCompile Include="System_Handles\Handle.cpp">
+      <Filter>Application\System_Handles</Filter>
+    </ClCompile>
+    <ClCompile Include="System_Manager\DLink.cpp">
+      <Filter>Application\System_Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="System_Manager\Manager.cpp">
+      <Filter>Application\System_Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="System_Timer\TimeEventMan.cpp">
+      <Filter>Application\System_Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="System_Timer\TimeEvent.cpp">
+      <Filter>Application\System_Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="Commands\ACommand.cpp">
+      <Filter>Application\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Commands\ACreateSnd.cpp">
+      <Filter>Application\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Commands\APanSnd.cpp">
+      <Filter>Application\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Commands\APlaySnd.cpp">
+      <Filter>Application\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Commands\AQuit.cpp">
+      <Filter>Application\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Commands\AVolSnd.cpp">
+      <Filter>Application\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Snd\Snd.cpp">
+      <Filter>Application\Snd</Filter>
+    </ClCompile>
+    <ClCompile Include="Snd\SndMan.cpp">
+      <Filter>Application\Snd</Filter>
+    </ClCompile>
+    <ClCompile Include="Thread_Audio\ASnd.cpp">
+      <Filter>Application\Thread_Audio\ASnd</Filter>
+    </ClCompile>
+    <ClCompile Include="Thread_Audio\ASndMan.cpp">
+      <Filter>Application\Thread_Audio\ASnd</Filter>
+    </ClCompile>
+    <ClCompile Include="Thread_Audio\Playlist.cpp">
+      <Filter>Application\Thread_Audio\Playlist</Filter>
+    </ClCompile>
+    <ClCompile Include="Thread_Audio\PlaylistMan.cpp">
+      <Filter>Application\Thread_Audio\Playlist</Filter>
+    </ClCompile>
+    <ClCompile Include="Thread_Audio\Voice.cpp">
+      <Filter>Application\Thread_Audio\Voice</Filter>
+    </ClCompile>
+    <ClCompile Include="Thread_Audio\VoiceMan.cpp">
+      <Filter>Application\Thread_Audio\Voice</Filter>
+    </ClCompile>
+    <ClCompile Include="Thread_Audio\Wave.cpp">
+      <Filter>Application\Thread_Audio\Wave</Filter>
+    </ClCompile>
+    <ClCompile Include="Thread_Audio\WaveMan.cpp">
+      <Filter>Application\Thread_Audio\Wave</Filter>
+    </ClCompile>
+    <ClCompile Include="Thread_Audio\AudioEngine.cpp">
+      <Filter>Application\Thread_Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Thread_Audio\AudioMain.cpp">
+      <Filter>Application\Thread_Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="System_Input\InputProcess.cpp">
+      <Filter>Application\System_Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Commands\AStopSnd.cpp">
+      <Filter>Application\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="Demos\Demo1\Demo1B_0.cpp">
+      <Filter>Application\Demos\Demo1</Filter>
+    </ClCompile>
+    <ClCompile Include="Demos\Demo1\Demo1B_1.cpp">
+      <Filter>Application\Demos\Demo1</Filter>
+    </ClCompile>
+    <ClCompile Include="Demos\Demo1\Demo1C_0.cpp">
+      <Filter>Application\Demos\Demo1</Filter>
+    </ClCompile>
+    <ClCompile Include="Demos\Demo1\Demo1C_1.cpp">
+      <Filter>Application\Demos\Demo1</Filter>
+    </ClCompile>
+    <ClCompile Include="Demos\Demo1\Demo1D_0.cpp">
+      <Filter>Application\Demos\Demo1</Filter>
+    </ClCompile>
+    <ClCompile Include="Demos\Demo1\Demo1D_1.cpp">
+      <Filter>Application\Demos\Demo1</Filter>
+    </ClCompile>
+    <ClCompile Include="Demos\Demo1\Demo1E_0.cpp">
+      <Filter>Application\Demos\Demo1</Filter>
+    </ClCompile>
+    <ClCompile Include="Demos\Demo1\Demo1.cpp">
+      <Filter>Application\Demos\Demo1</Filter>
+    </ClCompile>
+    <ClCompile Include="Demos\Demo2\Demo2.cpp">
+      <Filter>Application\Demos\Demo2</Filter>
+    </ClCompile>
+    <ClCompile Include="Commands\ASndEnd.cpp">
+      <Filter>Application\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Commands\ACommandQueue.cpp">
+      <Filter>Application\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Thread_Audio\VoiceCallback.cpp">
+      <Filter>Application\Thread_Audio\Voice</Filter>
+    </ClCompile>
+    <ClCompile Include="Demos\Demo2\Demo2A_0.cpp">
+      <Filter>Application\Demos\Demo2</Filter>
+    </ClCompile>
+    <ClCompile Include="Commands\AStartStitch.cpp">
+      <Filter>Application\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Snd\SndPriorityEntry.cpp">
+      <Filter>Application\Snd</Filter>
+    </ClCompile>
+    <ClCompile Include="Demos\Demo3\Demo3.cpp">
+      <Filter>Application\Demos\Demo3</Filter>
+    </ClCompile>
+    <ClCompile Include="Demos\Demo4\Demo4.cpp">
+      <Filter>Application\Demos\Demo4</Filter>
+    </ClCompile>
+    <ClCompile Include="Thread_Game\UserCallback.cpp">
+      <Filter>Application\Thread_Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Thread_Game\GCommand.cpp">
+      <Filter>Application\Thread_Game</Filter>
+    </ClCompile>
+    <ClCompile Include="System_File\FAsyncFileLoad.cpp">
+      <Filter>Application\System_File</Filter>
+    </ClCompile>
+    <ClCompile Include="System_File\FCommand.cpp">
+      <Filter>Application\System_File</Filter>
+    </ClCompile>
+    <ClCompile Include="System_File\FileMain.cpp">
+      <Filter>Application\System_File</Filter>
+    </ClCompile>
+    <ClCompile Include="System_File\FileMan.cpp">
+      <Filter>Application\System_File</Filter>
+    </ClCompile>
+    <ClCompile Include="System_File\FileUserCallback.cpp">
+      <Filter>Application\System_File</Filter>
+    </ClCompile>
+    <ClCompile Include="Commands\AFileLoad.cpp">
+      <Filter>Application\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Commands\AAsyncFileCompleted.cpp">
+      <Filter>Application\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Demos\Demo5\Demo5.cpp">
+      <Filter>Application\Demos\Demo5</Filter>
+    </ClCompile>
+    <ClCompile Include="Thread_Game\GFileUserCallback.cpp">
+      <Filter>Application\Thread_Game</Filter>
+    </ClCompile>
+    <ClCompile Include="System_File\FQuit.cpp">
+      <Filter>Application\System_File</Filter>
+    </ClCompile>
+    <ClCompile Include="Thread_Game\GUserCallback.cpp">
+      <Filter>Application\Thread_Game</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\dist\Math\lib\MathEngine_Debug.lib">
+      <Filter>_Libs\Math\lib</Filter>
+    </Library>
+    <Library Include="..\dist\SB6\lib\sb6_Debug.lib">
+      <Filter>_Libs\SB6\lib</Filter>
+    </Library>
+    <Library Include="..\dist\GLFW\lib\GLFW_Debug.lib">
+      <Filter>_Libs\GLFW\lib</Filter>
+    </Library>
+    <Library Include="..\dist\AzulCore\lib\AzulCore_Debug.lib">
+      <Filter>_Libs\AzulCore\lib</Filter>
+    </Library>
+    <Library Include="..\dist\File_Slow\lib\File_Slow_Debug.lib">
+      <Filter>_Libs\File_Slow\lib</Filter>
+    </Library>
+    <Library Include="..\dist\Time\lib\Time_Debug.lib">
+      <Filter>_Libs\Time\lib</Filter>
+    </Library>
+  </ItemGroup>
+</Project>

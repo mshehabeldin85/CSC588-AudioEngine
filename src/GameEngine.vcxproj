@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{ED602E5D-031C-4AF8-B6A6-4B34E0073B27}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>GameEngine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <CodeAnalysisRuleSet>monkey.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <EnableManagedIncrementalBuild>true</EnableManagedIncrementalBuild>
+    <GenerateManifest>false</GenerateManifest>
+    <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86</LibraryPath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <EnableMicrosoftCodeAnalysis>false</EnableMicrosoftCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>
+      </SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;ARGININE;_WINDOWS;WINDOWS_TARGET_PLATFORM="$(TargetPlatformVersion)";MEMORY_LOGS_DIR=R"($(SolutionDir))";TOOLS_VERSION=R"($(VCToolsVersion))";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir)Framework;$(SolutionDir)dist\Math\include;$(SolutionDir)dist\SB6\include;$(SolutionDir)dist\GLFW\include;$(SolutionDir)dist\File_Slow\include;$(SolutionDir)dist\AzulCore\include;$(SolutionDir)dist\Time\include;$(SolutionDir)ThreadHelper;$(ProjectDir)Commands;$(ProjectDir)Demos/Demo1;$(ProjectDir)Demos/Demo2;$(ProjectDir)Demos/Demo3;$(ProjectDir)Demos/Demo4;$(ProjectDir)Demos/Demo5;$(ProjectDir)Snd;$(ProjectDir)System_Circular;$(ProjectDir)System_File;$(ProjectDir)System_Handles;$(ProjectDir)System_Input;$(ProjectDir)System_Manager;$(ProjectDir)System_Timer;$(ProjectDIr)System_XAudio2;$(ProjectDir)Thread_Audio;$(ProjectDir)Thread_Game</AdditionalIncludeDirectories>
+      <WarningVersion>
+      </WarningVersion>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <PrecompiledHeaderOutputFile />
+      <ForcedIncludeFiles>Framework.h</ForcedIncludeFiles>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <EnablePREfast>false</EnablePREfast>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>false</StringPooling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <EnableParallelCodeGeneration>false</EnableParallelCodeGeneration>
+      <OpenMPSupport>false</OpenMPSupport>
+      <UseUnicodeForAssemblerListing>false</UseUnicodeForAssemblerListing>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
+      <IgnoreSpecificDefaultLibraries>MSVCRTD.lib</IgnoreSpecificDefaultLibraries>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName)_x.pdb</ProgramDatabaseFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;ARGININE;WINDOWS_TARGET_PLATFORM="$(TargetPlatformVersion)";MEMORY_LOGS_DIR=R"($(SolutionDir))";TOOLS_VERSION=R"($(VCToolsVersion))";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalIncludeDirectories>$(SolutionDir)Framework;$(SolutionDir)dist\Math\include;$(SolutionDir)dist\SB6\include;$(SolutionDir)dist\GLFW\include;$(SolutionDir)dist\File\include;$(SolutionDir)dist\AzulCore\include</AdditionalIncludeDirectories>
+      <WarningVersion>
+      </WarningVersion>
+      <PrecompiledHeaderOutputFile />
+      <ForcedIncludeFiles>Framework.h</ForcedIncludeFiles>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+      <TreatWarningAsError>true</TreatWarningAsError>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;ARGININE;_CONSOLE;WINDOWS_TARGET_PLATFORM="$(TargetPlatformVersion)";MEMORY_LOGS_DIR=R"($(SolutionDir))";TOOLS_VERSION=R"($(VCToolsVersion))";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir)Framework;$(SolutionDir)dist\Math\include;$(SolutionDir)dist\SB6\include;$(SolutionDir)dist\GLFW\include;$(SolutionDir)dist\File\include;$(SolutionDir)dist\AzulCore\include</AdditionalIncludeDirectories>
+      <WarningVersion>
+      </WarningVersion>
+      <PrecompiledHeaderOutputFile />
+      <ForcedIncludeFiles>Framework.h</ForcedIncludeFiles>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;ARGININE;WINDOWS_TARGET_PLATFORM="$(TargetPlatformVersion)";MEMORY_LOGS_DIR=R"($(SolutionDir))";TOOLS_VERSION=R"($(VCToolsVersion))";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir)Framework;$(SolutionDir)dist\Math\include;$(SolutionDir)dist\SB6\include;$(SolutionDir)dist\GLFW\include;$(SolutionDir)dist\File\include;$(SolutionDir)dist\AzulCore\include</AdditionalIncludeDirectories>
+      <WarningVersion>
+      </WarningVersion>
+      <PrecompiledHeaderOutputFile />
+      <ForcedIncludeFiles>Framework.h</ForcedIncludeFiles>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\dist\AzulCore\include\AzulCore.h" />
+    <ClInclude Include="..\dist\AzulCore\include\AzulFileHdr.h" />
+    <ClInclude Include="..\dist\AzulCore\include\AzulHelper.h" />
+    <ClInclude Include="..\dist\AzulCore\include\Camera.h" />
+    <ClInclude Include="..\dist\AzulCore\include\DebugOut.h" />
+    <ClInclude Include="..\dist\AzulCore\include\Engine.h" />
+    <ClInclude Include="..\dist\AzulCore\include\File.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GpuVertTypes.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_ColorByPosition.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_ColorNoTexture.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_ColorNoTextureLight.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_Sprite.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_SpriteBox.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_TextureFlat.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_TextureLight.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_WireframeAutoColor.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_WireframeConstantColor.h" />
+    <ClInclude Include="..\dist\AzulCore\include\Image.h" />
+    <ClInclude Include="..\dist\AzulCore\include\Keyboard.h" />
+    <ClInclude Include="..\dist\AzulCore\include\LibrarySetup.h" />
+    <ClInclude Include="..\dist\AzulCore\include\Model.h" />
+    <ClInclude Include="..\dist\AzulCore\include\Mouse.h" />
+    <ClInclude Include="..\dist\AzulCore\include\Rect.h" />
+    <ClInclude Include="..\dist\AzulCore\include\ShaderObject.h" />
+    <ClInclude Include="..\dist\AzulCore\include\Texture.h" />
+    <ClInclude Include="..\dist\AzulCore\include\TextureTGA.h" />
+    <ClInclude Include="..\dist\File_Slow\include\File_Slow.h" />
+    <ClInclude Include="..\dist\GLFW\include\GL\glfw.h" />
+    <ClInclude Include="..\dist\Math\include\Align16.h" />
+    <ClInclude Include="..\dist\Math\include\Constants.h" />
+    <ClInclude Include="..\dist\Math\include\Enum.h" />
+    <ClInclude Include="..\dist\Math\include\MathApp.h" />
+    <ClInclude Include="..\dist\Math\include\MathEngine.h" />
+    <ClInclude Include="..\dist\Math\include\Matrix.h" />
+    <ClInclude Include="..\dist\Math\include\Quat.h" />
+    <ClInclude Include="..\dist\Math\include\QuatApp.h" />
+    <ClInclude Include="..\dist\Math\include\Util.h" />
+    <ClInclude Include="..\dist\Math\include\Vect.h" />
+    <ClInclude Include="..\dist\Math\include\VectApp.h" />
+    <ClInclude Include="..\dist\SB6\include\arcball.h" />
+    <ClInclude Include="..\dist\SB6\include\object.h" />
+    <ClInclude Include="..\dist\SB6\include\sb6.h" />
+    <ClInclude Include="..\dist\SB6\include\sb6ext.h" />
+    <ClInclude Include="..\dist\SB6\include\sb6ktx.h" />
+    <ClInclude Include="..\dist\SB6\include\sb6mfile.h" />
+    <ClInclude Include="..\dist\SB6\include\shader.h" />
+    <ClInclude Include="..\dist\SB6\include\vmath.h" />
+    <ClInclude Include="..\dist\Time\include\Time.h" />
+    <ClInclude Include="..\dist\Time\include\Timer.h" />
+    <ClInclude Include="..\Framework\Framework.h" />
+    <ClInclude Include="..\ThreadHelper\ThreadDictionary.h" />
+    <ClInclude Include="..\ThreadHelper\ThreadHelper.h" />
+    <ClInclude Include="..\ThreadHelper\WindowsWrapper.h" />
+    <ClInclude Include="Commands\AAsyncFileCompleted.h" />
+    <ClInclude Include="Commands\ACommand.h" />
+    <ClInclude Include="Commands\ACommandQueue.h" />
+    <ClInclude Include="Commands\ACreateSnd.h" />
+    <ClInclude Include="Commands\AFileLoad.h" />
+    <ClInclude Include="Commands\APanSnd.h" />
+    <ClInclude Include="Commands\APlaySnd.h" />
+    <ClInclude Include="Commands\AQuit.h" />
+    <ClInclude Include="Commands\ASndEnd.h" />
+    <ClInclude Include="Commands\AStartStitch.h" />
+    <ClInclude Include="Commands\AStopSnd.h" />
+    <ClInclude Include="Commands\AVolSnd.h" />
+    <ClInclude Include="Commands\Command.h" />
+    <ClInclude Include="Demos\Demo1\Demo1.h" />
+    <ClInclude Include="Demos\Demo1\Demo1A_0.h" />
+    <ClInclude Include="Demos\Demo1\Demo1A_1.h" />
+    <ClInclude Include="Demos\Demo1\Demo1A_2.h" />
+    <ClInclude Include="Demos\Demo1\Demo1B_0.h" />
+    <ClInclude Include="Demos\Demo1\Demo1B_1.h" />
+    <ClInclude Include="Demos\Demo1\Demo1C_0.h" />
+    <ClInclude Include="Demos\Demo1\Demo1C_1.h" />
+    <ClInclude Include="Demos\Demo1\Demo1D_0.h" />
+    <ClInclude Include="Demos\Demo1\Demo1D_1.h" />
+    <ClInclude Include="Demos\Demo1\Demo1E_0.h" />
+    <ClInclude Include="Demos\Demo2\Demo2.h" />
+    <ClInclude Include="Demos\Demo2\Demo2A_0.h" />
+    <ClInclude Include="Demos\Demo3\Demo3.h" />
+    <ClInclude Include="Demos\Demo3\Demo3_0.h" />
+    <ClInclude Include="Demos\Demo3\Demo3_1.h" />
+    <ClInclude Include="Demos\Demo3\Demo3_2.h" />
+    <ClInclude Include="Demos\Demo3\Demo3_3.h" />
+    <ClInclude Include="Demos\Demo3\Demo3_4.h" />
+    <ClInclude Include="Demos\Demo3\Demo3_5.h" />
+    <ClInclude Include="Demos\Demo3\Demo3_6.h" />
+    <ClInclude Include="Demos\Demo3\Demo3_7.h" />
+    <ClInclude Include="Demos\Demo3\Demo3_8.h" />
+    <ClInclude Include="Demos\Demo3\Demo3_9.h" />
+    <ClInclude Include="Demos\Demo4\Demo4.h" />
+    <ClInclude Include="Demos\Demo4\Demo4_0.h" />
+    <ClInclude Include="Demos\Demo5\Demo5.h" />
+    <ClInclude Include="Demos\Demo5\Demo5_0.h" />
+    <ClInclude Include="Demos\Demo5\Demo5_1.h" />
+    <ClInclude Include="Demos\Demo5\Demo5_2.h" />
+    <ClInclude Include="Snd\Snd.h" />
+    <ClInclude Include="Snd\SndID.h" />
+    <ClInclude Include="Snd\SndMan.h" />
+    <ClInclude Include="Snd\SndPriorityEntry.h" />
+    <ClInclude Include="System_Circular\CircularData.h" />
+    <ClInclude Include="System_Circular\CircularIndex.h" />
+    <ClInclude Include="System_File\FAsyncFileLoad.h" />
+    <ClInclude Include="System_File\FCommand.h" />
+    <ClInclude Include="System_File\FileMain.h" />
+    <ClInclude Include="System_File\FileMan.h" />
+    <ClInclude Include="System_File\FileUserCallback.h" />
+    <ClInclude Include="System_File\FQuit.h" />
+    <ClInclude Include="System_Handles\Handle.h" />
+    <ClInclude Include="System_Handles\HandleMan.h" />
+    <ClInclude Include="System_Input\InputProcess.h" />
+    <ClInclude Include="System_Input\InputTest.h" />
+    <ClInclude Include="System_Manager\DLink.h" />
+    <ClInclude Include="System_Manager\Manager.h" />
+    <ClInclude Include="System_Timer\TimeEvent.h" />
+    <ClInclude Include="System_Timer\TimeEventMan.h" />
+    <ClInclude Include="System_XAudio2\XAudio2Chunk.h" />
+    <ClInclude Include="System_XAudio2\XAudio2Endianess.h" />
+    <ClInclude Include="System_XAudio2\XAudio2LoadLibs.h" />
+    <ClInclude Include="System_XAudio2\XAudio2Wrapper.h" />
+    <ClInclude Include="Thread_Audio\ASnd.h" />
+    <ClInclude Include="Thread_Audio\ASndMan.h" />
+    <ClInclude Include="Thread_Audio\AudioEngine.h" />
+    <ClInclude Include="Thread_Audio\AudioMain.h" />
+    <ClInclude Include="Thread_Audio\Playlist.h" />
+    <ClInclude Include="Thread_Audio\PlaylistMan.h" />
+    <ClInclude Include="Thread_Audio\Voice.h" />
+    <ClInclude Include="Thread_Audio\VoiceCallback.h" />
+    <ClInclude Include="Thread_Audio\VoiceMan.h" />
+    <ClInclude Include="Thread_Audio\Wave.h" />
+    <ClInclude Include="Thread_Audio\WaveMan.h" />
+    <ClInclude Include="Thread_Game\Game.h" />
+    <ClInclude Include="Thread_Game\GameApp.h" />
+    <ClInclude Include="Thread_Game\GCommand.h" />
+    <ClInclude Include="Thread_Game\GFileUserCallback.h" />
+    <ClInclude Include="Thread_Game\GUserCallback.h" />
+    <ClInclude Include="Thread_Game\UserCallBack.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Framework\__DO NOT MODIFY__" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\ThreadHelper\ThreadDictionary.cpp" />
+    <ClCompile Include="..\ThreadHelper\ThreadHelper.cpp" />
+    <ClCompile Include="Commands\AAsyncFileCompleted.cpp" />
+    <ClCompile Include="Commands\ACommand.cpp" />
+    <ClCompile Include="Commands\ACommandQueue.cpp" />
+    <ClCompile Include="Commands\ACreateSnd.cpp" />
+    <ClCompile Include="Commands\AFileLoad.cpp" />
+    <ClCompile Include="Commands\APanSnd.cpp" />
+    <ClCompile Include="Commands\APlaySnd.cpp" />
+    <ClCompile Include="Commands\AQuit.cpp" />
+    <ClCompile Include="Commands\ASndEnd.cpp" />
+    <ClCompile Include="Commands\AStartStitch.cpp" />
+    <ClCompile Include="Commands\AStopSnd.cpp" />
+    <ClCompile Include="Commands\AVolSnd.cpp" />
+    <ClCompile Include="Demos\Demo1\Demo1.cpp" />
+    <ClCompile Include="Demos\Demo1\Demo1B_0.cpp" />
+    <ClCompile Include="Demos\Demo1\Demo1B_1.cpp" />
+    <ClCompile Include="Demos\Demo1\Demo1C_0.cpp" />
+    <ClCompile Include="Demos\Demo1\Demo1C_1.cpp" />
+    <ClCompile Include="Demos\Demo1\Demo1D_0.cpp" />
+    <ClCompile Include="Demos\Demo1\Demo1D_1.cpp" />
+    <ClCompile Include="Demos\Demo1\Demo1E_0.cpp" />
+    <ClCompile Include="Demos\Demo2\Demo2.cpp" />
+    <ClCompile Include="Demos\Demo2\Demo2A_0.cpp" />
+    <ClCompile Include="Demos\Demo3\Demo3.cpp" />
+    <ClCompile Include="Demos\Demo4\Demo4.cpp" />
+    <ClCompile Include="Demos\Demo5\Demo5.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Snd\Snd.cpp" />
+    <ClCompile Include="Snd\SndMan.cpp" />
+    <ClCompile Include="Snd\SndPriorityEntry.cpp" />
+    <ClCompile Include="System_Circular\CircularData.cpp" />
+    <ClCompile Include="System_Circular\CircularIndex.cpp" />
+    <ClCompile Include="System_File\FAsyncFileLoad.cpp" />
+    <ClCompile Include="System_File\FCommand.cpp" />
+    <ClCompile Include="System_File\FileMain.cpp" />
+    <ClCompile Include="System_File\FileMan.cpp" />
+    <ClCompile Include="System_File\FileUserCallback.cpp" />
+    <ClCompile Include="System_File\FQuit.cpp" />
+    <ClCompile Include="System_Handles\Handle.cpp" />
+    <ClCompile Include="System_Handles\HandleLock.cpp" />
+    <ClCompile Include="System_Handles\HandleMan.cpp" />
+    <ClCompile Include="System_Input\InputProcess.cpp" />
+    <ClCompile Include="System_Input\InputTest.cpp" />
+    <ClCompile Include="System_Manager\DLink.cpp" />
+    <ClCompile Include="System_Manager\Manager.cpp" />
+    <ClCompile Include="System_Timer\TimeEvent.cpp" />
+    <ClCompile Include="System_Timer\TimeEventMan.cpp" />
+    <ClCompile Include="System_XAudio2\XAudio2Chunk.cpp" />
+    <ClCompile Include="Thread_Audio\ASnd.cpp" />
+    <ClCompile Include="Thread_Audio\ASndMan.cpp" />
+    <ClCompile Include="Thread_Audio\AudioEngine.cpp" />
+    <ClCompile Include="Thread_Audio\AudioMain.cpp" />
+    <ClCompile Include="Thread_Audio\Playlist.cpp" />
+    <ClCompile Include="Thread_Audio\PlaylistMan.cpp" />
+    <ClCompile Include="Thread_Audio\Voice.cpp" />
+    <ClCompile Include="Thread_Audio\VoiceCallback.cpp" />
+    <ClCompile Include="Thread_Audio\VoiceMan.cpp" />
+    <ClCompile Include="Thread_Audio\Wave.cpp" />
+    <ClCompile Include="Thread_Audio\WaveMan.cpp" />
+    <ClCompile Include="Thread_Game\Game.cpp" />
+    <ClCompile Include="Thread_Game\GameApp.cpp" />
+    <ClCompile Include="Thread_Game\GCommand.cpp" />
+    <ClCompile Include="Thread_Game\GFileUserCallback.cpp" />
+    <ClCompile Include="Thread_Game\GUserCallback.cpp" />
+    <ClCompile Include="Thread_Game\UserCallback.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\dist\AzulCore\lib\AzulCore_Debug.lib" />
+    <Library Include="..\dist\File_Slow\lib\File_Slow_Debug.lib" />
+    <Library Include="..\dist\GLFW\lib\GLFW_Debug.lib" />
+    <Library Include="..\dist\Math\lib\MathEngine_Debug.lib" />
+    <Library Include="..\dist\SB6\lib\sb6_Debug.lib" />
+    <Library Include="..\dist\Time\lib\Time_Debug.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
