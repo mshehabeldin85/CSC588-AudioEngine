@@ -1,5 +1,5 @@
 # Audio Engine
-Building an Audio Engine using Microsoft XAudio2 library by appliying Muti-Threadibg concepts, command pattern in circular queues to pass commands between threads.
+Building an Audio Engine using Microsoft XAudio2 library by applying Muti-Threadibg concepts, command pattern in circular queues to pass commands between threads.
 
 # Demos
 This [Youtube Demos Playlist](https://www.youtube.com/playlist?list=PLiPAB5oCbbf8cbWEYzPHaxj6MsrC0gHf7) explains how the engine components are implemented iteratively until achiveing the final product.
